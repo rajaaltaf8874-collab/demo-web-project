@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f3f6;
+        }
+
+    
+        .header {
+            background: #2874f0;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .search {
+            width: 60%;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        
+        .container {
+            display: grid;
+            grid-template-columns: 200px auto;
+            gap: 15px;
+            padding: 15px;
+        }
+
+
+        .sidebar {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+        }
+
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .card h4 {
+            margin: 10px 0 5px;
+        }
+
+        .card p {
+            color: green;
+            font-weight: bold;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="header">
+        <div class="logo">Flipkart</div>
+        <input type="text" class="search" placeholder="Search for products, brands and more">
+    </div>
+
+    
+    <div class="container">
+
+        
+        <div class="sidebar">
+            <h3>Categories</h3>
+            <a href="https://dl.flipkart.com/s/7i92ERNNNN">Mobiles</a>
+        <a href="https://dl.flipkart.com/s/7i8iGTNNNN">Electronics</a>
+            <a href="https://dl.flipkart.com/dl/blary-fashion-planet-baby-boys-girls-casual-sweatshirt-track-pants/p/itm87d73ea64b0b6?pid=KPBHFYQWTHFSPEHG&lid=LSTKPBHFYQWTHFSPEHGWVLOYF&marketplace=FLIPKART&q=clothes&store=clo&srno=s_1_10&otracker=search&otracker1=search&fm=Search&iid=a935333e-a10c-4c1b-b408-62752a428d6b.KPBHFYQWTHFSPEHG.SEARCH&ppt=sp&ppn=sp&ssid=e55ntti0n40000001771131505947&qH=e7a80f49aaf2f65d&ov_redirect=true&_refId=&_appId=CL">Fashion</a>
+           
+        </div>
+
+        <!-- Products -->
+        <div class="products">
+
+            <div class="card">
+                <a href="#">
+                    <img src="smart phone.jpeg">
+                    <h4>MOBILE PHONE</h4>
+                    <p>₹12,999</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <img src="html &css book .jpeg">
+                    <h4>HTML & CSS Book</h4>
+                    <p>₹1,000</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <img src="shoes.jpeg">
+                    <h4>SHOES</h4>
+                    <p>₹1,999</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <img src="smarrt watch.jpeg">
+                    <h4>SMART WATCH</h4>
+                    <p>₹2,499</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
